@@ -1,13 +1,13 @@
 const db = require("../config/knexConfig.js");
 
 module.exports = {
-  findUser,
+  findUsers,
   findUserById,
   findUserByUsername,
   addUser
 };
 
-function findUser() {
+function findUsers() {
   return db("users");
 }
 
